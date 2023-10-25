@@ -13,7 +13,7 @@ Git.
 Clona el repositorio a tu máquina local:
 
 
-git clone https://github.com/tu_usuario_en_github/ruta_del_repositorio.git
+git clone  https://github.com/yepacode/Crud_php.git
 
 Asegúrate de colocar el proyecto en la carpeta htdocs (si estás utilizando XAMPP).
 
