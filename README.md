@@ -12,13 +12,33 @@ Git.
 🔧 Instalación
 Clona el repositorio a tu máquina local:
 
-bash
-Copy code
+
 git clone https://github.com/tu_usuario_en_github/ruta_del_repositorio.git
 
 Asegúrate de colocar el proyecto en la carpeta htdocs (si estás utilizando XAMPP).
 
 Inicia el servidor Apache y MySQL y dirígete a http://localhost/ruta_del_proyecto en tu navegador.
+BD.
+-- Creación de la base de datos
+CREATE DATABASE crud_productos;
+
+-- Seleccionamos la base de datos
+USE crud_productos;
+
+-- Creación de la tabla 'productos'
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    precio DECIMAL(10, 2) NOT NULL
+);
+
+-- Insertar datos de prueba (opcional)
+INSERT INTO productos (nombre, precio) VALUES
+    ('Producto A', 100.50),
+    ('Producto B', 200.25),
+    ('Producto C', 150.75);
+
+
 
 🛠️ Construido con
 PHP
